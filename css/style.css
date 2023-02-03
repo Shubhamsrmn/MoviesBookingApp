@@ -1,0 +1,99 @@
+header {
+  background-color: #abc270;
+  width: 100%;
+  height: 10vh;
+  font-size: 2.6rem; }
+
+nav {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  nav .subcontainer1 {
+    display: flex;
+    justify-content: normal;
+    align-items: normal; }
+  nav .subcontainer2 {
+    display: flex;
+    justify-content: normal;
+    align-items: center; }
+  nav .subcontainer3 {
+    display: flex;
+    justify-content: normal;
+    align-items: normal;
+    gap: 1rem; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: normal;
+  padding: 2rem; }
+  .grid-container .heading {
+    grid-column: 1/-1; }
+  .grid-container span {
+    margin-bottom: 1rem; }
+  .grid-container img {
+    width: 28rem;
+    height: 40rem; }
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: normal;
+  margin-bottom: 2.4rem; }
+
+.btn {
+  width: 12rem;
+  height: 4rem;
+  font-size: 2rem;
+  border: none;
+  background: none;
+  color: #473c33;
+  background-color: #fda769;
+  border-radius: 10px;
+  cursor: pointer; }
+
+.next-movies-btn {
+  width: 14rem;
+  height: 5rem;
+  font-size: 2.4rem; }
+
+.search-btn {
+  width: 8rem;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 16px;
+  position: absolute;
+  right: 28%; }
+
+.btn-with-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#search {
+  width: 48rem;
+  height: 4rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 16px; }
+  #search:focus {
+    outline: none; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.2%; }
+
+body {
+  color: #473c33;
+  background-color: #faecd6; }
+
+.visibility-hidden {
+  visibility: hidden; }

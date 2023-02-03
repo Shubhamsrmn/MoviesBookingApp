@@ -1,0 +1,22 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: normal;
+  .heading {
+    grid-column: 1/-1;
+  }
+  span {
+    margin-bottom: 1rem;
+  }
+  padding: 2rem;
+  img {
+    width: 28rem;
+    height: 40rem;
+  }
+}
+.btn-container {
+  @include display-flex(space-around, normal);
+  margin-bottom: 2.4rem;
+}

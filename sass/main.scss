@@ -1,5 +1,8 @@
-@import "base/base";
 @import "base/animation";
 @import "base/typography";
 @import "abstract/mixin";
 @import "abstract/variables";
+@import "layout/header";
+@import "layout/hero";
+@import "components/buttons.scss";
+@import "base/base";

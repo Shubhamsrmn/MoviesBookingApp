@@ -9,32 +9,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script defer src="javascript/controller.js"></script>
+    <script defer type="module" src="javascript/controller.js"></script>
     <title>Movies Booking App</title>
   </head>
   <body>
     <header>
       <nav>
-        <div>
+        <div class="subcontainer1">
           <i class="ri-movie-2-line"></i>
           <span>Movies Booking App</span>
         </div>
-        <div>
-          <label for="search"><i class="ri-search-line"></i></label>
+        <div class="subcontainer2">
+          <label for="search"></label>
           <input
             type="text"
             id="search"
             placeholder="Search Movies to book tickets..."
           />
+          <button class="btn search-btn">Search</button>
         </div>
-        <div>
+        <div class="subcontainer3">
           <div>
-            <a href="#">pune <i class="ri-arrow-drop-down-line"></i></a>
+            <button class="btn btn-with-icon">
+              <span>Location</span>
+              <span><i class="ri-arrow-drop-down-line"></i></span>
+            </button>
           </div>
-          <div><button>sign in</button></div>
+          <div>
+            <button class="btn">
+              <span>Sign In</span>
+            </button>
+          </div>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section>
+        <div class="grid-container">
+          <span class="heading">
+            <h1>Lets Watch Most-Awaiting Movies in Theaters</h1>
+          </span>
+        </div>
+        <div class="btn-container">
+          <button class="btn next-movies-btn visibility-hidden">
+            Next Movies
+          </button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

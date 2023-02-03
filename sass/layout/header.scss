@@ -1,0 +1,18 @@
+header {
+  background-color: $color-primary;
+  @include wid-hie-fsz(100%, 10vh, 2.6rem);
+}
+nav {
+  padding: 1rem 2rem;
+  @include display-flex(space-between, center);
+  .subcontainer1 {
+    @include display-flex(normal, normal);
+  }
+  .subcontainer2 {
+    @include display-flex(normal, center);
+  }
+  .subcontainer3 {
+    @include display-flex(normal, normal);
+    gap: 1rem;
+  }
+}
