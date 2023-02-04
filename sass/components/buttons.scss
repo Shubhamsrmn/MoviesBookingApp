@@ -7,6 +7,9 @@
   border-radius: 10px;
   cursor: pointer;
 }
+.prev-movies-btn {
+  @include wid-hie-fsz(14rem, 5rem, 2.4rem);
+}
 .next-movies-btn {
   @include wid-hie-fsz(14rem, 5rem, 2.4rem);
 }

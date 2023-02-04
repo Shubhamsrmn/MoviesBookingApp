@@ -1,7 +1,7 @@
 header {
   background-color: #abc270;
   width: 100%;
-  height: 10vh;
+  height: 12vh;
   font-size: 2.6rem; }
 
 nav {
@@ -34,6 +34,9 @@ nav {
     grid-column: 1/-1; }
   .grid-container span {
     margin-bottom: 1rem; }
+    .grid-container span a {
+      text-decoration: none;
+      color: inherit; }
   .grid-container img {
     width: 28rem;
     height: 40rem; }
@@ -54,6 +57,11 @@ nav {
   background-color: #fda769;
   border-radius: 10px;
   cursor: pointer; }
+
+.prev-movies-btn {
+  width: 14rem;
+  height: 5rem;
+  font-size: 2.4rem; }
 
 .next-movies-btn {
   width: 14rem;
