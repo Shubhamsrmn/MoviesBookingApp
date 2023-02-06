@@ -6,10 +6,14 @@
 html {
   font-size: 62.2%;
 }
+
 body {
   color: $color-font;
   background-color: $color-bg;
 }
 .visibility-hidden {
   visibility: hidden;
+}
+.display-hidden {
+  display: none;
 }

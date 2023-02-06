@@ -4,20 +4,32 @@
   font-size: 2.4rem;
   text-align: center;
   font-weight: normal;
-  .heading {
+  padding: 2rem;
+  padding-bottom: 1rem;
+  .heading-container {
     grid-column: 1/-1;
   }
   span {
     margin-bottom: 1rem;
+  }
+  .movies-item {
     a {
       text-decoration: none;
       color: inherit;
     }
-  }
-  padding: 2rem;
-  img {
-    width: 28rem;
-    height: 40rem;
+    p {
+      padding: 4px;
+      display: inline-block;
+      width: 28rem;
+      text-overflow: ellipsis ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    img {
+      border-radius: 20px;
+      width: 28rem;
+      height: 36rem;
+    }
   }
 }
 .btn-container {

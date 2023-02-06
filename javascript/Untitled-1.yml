@@ -1,0 +1,68 @@
+
+Object { id: "tt1630029", title: "Avatar: The Way of Water", fullTitle: "Avatar: The Way of Water (2022)", year: "2022", releaseState: "16 Dec 2022", image: "https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00…kEyXkFqcGdeQXVyMjQxNTE1MDA@._V1_UX128_CR0,12,128,176_AL_.jpg", runtimeMins: "192", runtimeStr: "192 mins", plot: "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.", contentRating: "PG-13", … }
+​
+contentRating: "PG-13"
+​
+directorList: Array [ {…} ]
+​​
+0: Object { id: "nm0000116", name: "James Cameron" }
+​​
+length: 1
+​​
+<prototype>: Array []
+​
+directors: "James Cameron"
+​
+fullTitle: "Avatar: The Way of Water (2022)"
+​
+genreList: Array(3) [ {…}, {…}, {…} ]
+​​
+0: Object { key: "Action", value: "Action" }
+​​
+1: Object { key: "Adventure", value: "Adventure" }
+​​
+2: Object { key: "Fantasy", value: "Fantasy" }
+​​
+length: 3
+​​
+<prototype>: Array []
+​
+genres: "Action, Adventure, Fantasy"
+​
+id: "tt1630029"
+​
+imDbRating: "7.8"
+​
+imDbRatingCount: "282229"
+​
+image: "https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00…kEyXkFqcGdeQXVyMjQxNTE1MDA@._V1_UX128_CR0,12,128,176_AL_.jpg"
+​
+metacriticRating: "67"
+​
+plot: "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home."
+​
+releaseState: "16 Dec 2022"
+​
+runtimeMins: "192"
+​
+runtimeStr: "192 mins"
+​
+starList: Array(4) [ {…}, {…}, {…}, … ]
+​​
+0: Object { id: "nm0941777", name: "Sam Worthington" }
+​​
+1: Object { id: "nm0757855", name: "Zoe Saldana" }
+​​
+2: Object { id: "nm0000244", name: "Sigourney Weaver" }
+​​
+3: Object { id: "nm0002332", name: "Stephen Lang" }
+​​
+length: 4
+​​
+<prototype>: Array []
+​
+stars: "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang"
+​
+title: "Avatar: The Way of Water"
+​
+year: "2022"
