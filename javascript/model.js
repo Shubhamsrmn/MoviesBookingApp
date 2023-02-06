@@ -7,18 +7,18 @@ export const headingText = {
   searchMovies: "Your Searched Movies Are Here.",
 };
 export async function getLatestMoviesList(str) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("t");
-    }, 5000);
-  });
+  // return new Promise((resolve, reject) => {
+  //   setTimeout(() => {
+  //     resolve("t");
+  //   }, 5000);
+  // });
 
-  // const request = await fetch(
-  //   "https://imdb-api.com/en/API/InTheaters/k_8mt90ri5"
-  // );
-  // const response = await request.json();
-  // state.newMovies = response.items;
-  // console.log(state.newMovies[0]);
+  const request = await fetch(
+    "https://imdb-api.com/en/API/InTheaters/k_8mt90ri5"
+  );
+  const response = await request.json();
+  state.newMovies = response.items;
+  console.log(state.newMovies[0]);
 }
 export async function getSearchMoviesList(searchQuery) {
   return new Promise((resolve, reject) => {

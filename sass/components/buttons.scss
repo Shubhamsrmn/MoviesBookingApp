@@ -34,3 +34,12 @@
 .book-btn {
   @include wid-hie-fsz(20rem, 6rem, 2.4rem);
 }
+.close-movie-btn {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translate(-100%, 0);
+  color: white;
+  text-align: center;
+  @include wid-hie-fsz(4rem, 4rem, 3.2rem);
+}

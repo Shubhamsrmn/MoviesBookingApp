@@ -78,7 +78,8 @@ nav {
 .full-movie-content {
   display: flex;
   justify-content: center;
-  align-items: normal; }
+  align-items: normal;
+  position: relative; }
   .full-movie-content img {
     border-radius: 20px;
     padding: 1rem;
@@ -159,6 +160,17 @@ nav {
   width: 20rem;
   height: 6rem;
   font-size: 2.4rem; }
+
+.close-movie-btn {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translate(-100%, 0);
+  color: white;
+  text-align: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 3.2rem; }
 
 .loader-container {
   position: absolute;

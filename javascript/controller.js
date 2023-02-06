@@ -45,3 +45,13 @@ async function displayingList(funcName, query, arrName) {
     index -= 4;
   });
 })();
+
+(function managingHashChange() {
+  view.addEventHandlerMovieItem(function handler() {
+    const id = location.hash.slice(1);
+    view.renderFullMovieItem(moviesList, id);
+  });
+  view.addEventHandlerCloseMovie(function handler() {
+    view.closeFullMovieItem();
+  });
+})();

@@ -1,5 +1,6 @@
 .full-movie-content {
   @include display-flex(center, normal);
+  position: relative;
   img {
     border-radius: 20px;
     padding: 1rem;
@@ -33,5 +34,7 @@
         font-size: 2.4rem;
       }
     }
+  }
+  .close-movie-btn {
   }
 }
