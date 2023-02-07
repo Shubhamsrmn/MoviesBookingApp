@@ -48,26 +48,30 @@ nav {
   font-size: 2.4rem;
   text-align: center;
   font-weight: normal;
-  padding: 2rem;
-  padding-bottom: 1rem; }
+  margin: 1rem;
+  column-gap: 2rem; }
   .grid-container .heading-container {
     grid-column: 1/-1; }
   .grid-container span {
-    margin-bottom: 1rem; }
-  .grid-container .movies-item a {
-    text-decoration: none;
-    color: inherit; }
-  .grid-container .movies-item p {
-    padding: 4px;
-    display: inline-block;
-    width: 28rem;
-    text-overflow: ellipsis ellipsis;
-    overflow: hidden;
-    white-space: nowrap; }
-  .grid-container .movies-item img {
-    border-radius: 20px;
-    width: 28rem;
-    height: 36rem; }
+    margin-bottom: 2rem; }
+  .grid-container .movies-item {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    border-radius: 20px; }
+    .grid-container .movies-item a {
+      text-decoration: none;
+      color: inherit; }
+    .grid-container .movies-item p {
+      padding: 4px;
+      display: inline-block;
+      width: 28rem;
+      text-overflow: ellipsis ellipsis;
+      overflow: hidden;
+      white-space: nowrap; }
+    .grid-container .movies-item img {
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+      height: 36rem; }
 
 .btn-container {
   display: flex;
@@ -77,13 +81,16 @@ nav {
 
 .full-movie-content {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: normal;
+  gap: 2.4rem;
   position: relative; }
   .full-movie-content img {
     border-radius: 20px;
-    padding: 1rem;
-    width: 36%; }
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    margin: 1.6rem;
+    width: 36%;
+    height: 64rem; }
   .full-movie-content .full-content-des {
     font-size: 4rem; }
     .full-movie-content .full-content-des .book-btn {
@@ -163,8 +170,8 @@ nav {
 
 .close-movie-btn {
   position: absolute;
-  top: 0;
-  left: 100%;
+  top: 1%;
+  left: 99%;
   transform: translate(-100%, 0);
   color: white;
   text-align: center;

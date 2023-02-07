@@ -10,16 +10,6 @@ async function assignMoviesList(value) {
   index += 4;
 }
 (async function () {
-  // await model.getLatestMoviesList().then(() => {
-  //   assignMoviesList("newMovies");
-  //   view.loader.classList.add("display-hidden");
-  // });
-  // view.addEventHandlerSearch(async function handler() {
-  //   await model.getSearchMoviesList(view.input.value).then(() => {
-  //     assignMoviesList("searchMovies");
-  //     view.loader.classList.add("display-hidden");
-  //   });
-  // });
   displayingList(model.getLatestMoviesList, "", "newMovies");
   view.addEventHandlerSearch(function handler() {
     displayingList(model.getSearchMoviesList, view.input.value, "searchMovies");
@@ -27,7 +17,7 @@ async function assignMoviesList(value) {
 })();
 
 async function displayingList(funcName, query, arrName) {
-  view.clearMoviesDisplay();
+  view.clearDisplay(view.parent, ".movies-item");
   view.hidingPagesbtn();
   view.loader.classList.remove("display-hidden");
   await funcName(query).then(() => {
@@ -47,9 +37,16 @@ async function displayingList(funcName, query, arrName) {
 })();
 
 (function managingHashChange() {
-  view.addEventHandlerMovieItem(function handler() {
+  view.addEventHandlerMovieItem(async function handler() {
     const id = location.hash.slice(1);
-    view.renderFullMovieItem(moviesList, id);
+    location.hash = view.starHashcode;
+    const url = [];
+    if (moviesList[id] !== undefined) {
+      url[0] = moviesList[id].image;
+      view.renderFullMovieItem(moviesList, id);
+      await model.getMovieImage(url);
+      view.fullContentImage.src = url[1];
+    }
   });
   view.addEventHandlerCloseMovie(function handler() {
     view.closeFullMovieItem();

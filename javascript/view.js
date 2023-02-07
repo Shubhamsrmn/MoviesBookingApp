@@ -3,9 +3,11 @@ const nextMoviesbtn = document.querySelector(".next-movies-btn");
 const searchbtn = document.querySelector(".search-btn");
 const closeMoviebtn = document.querySelector(".close-movie-btn");
 const heading = document.querySelector(".heading");
-const parent = document.querySelector(".grid-container");
 const btn_container = document.querySelector(".btn-container");
 const movie_parent = document.querySelector(".full-movie-content");
+export let fullContentImage;
+export const starHashcode = location.hash;
+export const parent = document.querySelector(".grid-container");
 export const input = document.getElementById("search");
 export const loader = document.querySelector(".loader");
 export function renderHeading(str) {
@@ -13,7 +15,7 @@ export function renderHeading(str) {
 }
 export async function render(newMovies, index) {
   if (newMovies.length === 0) return;
-  clearMoviesDisplay();
+  clearDisplay(parent, ".movies-item");
   if (index >= 4) prevMoviesbtn.classList.remove("visibility-hidden");
   else prevMoviesbtn.classList.add("visibility-hidden");
   if (index + 4 <= newMovies.length)
@@ -33,13 +35,14 @@ export function closeFullMovieItem() {
   movie_parent.classList.add("display-hidden");
   closeMoviebtn.classList.add("display-hidden");
   clearDisplay(movie_parent, ".full-content-des");
+  location.hash = starHashcode;
 }
 export function renderFullMovieItem(newMovies, index) {
   parent.classList.add("display-hidden");
   btn_container.classList.add("display-hidden");
   movie_parent.classList.remove("display-hidden");
   closeMoviebtn.classList.remove("display-hidden");
-  const markup = `<img class ="full-content-des" src="${newMovies[index].image}" alt="" />
+  const markup = `<img class ="full-content-des full-content-img" src="${newMovies[index].iamge}" alt="" />
   <div class="full-content-des">
     <span class="full-content-container">
       <p>
@@ -71,6 +74,7 @@ export function renderFullMovieItem(newMovies, index) {
   </div>
   `;
   movie_parent.insertAdjacentHTML("afterbegin", markup);
+  fullContentImage = document.querySelector(".full-content-img");
 }
 export function addEventHandlerMovieItem(handler) {
   window.addEventListener("hashchange", handler);
@@ -86,12 +90,6 @@ export function addEventHandlerSearch(handler) {
 }
 export function addEventHandlerCloseMovie(handler) {
   closeMoviebtn.addEventListener("click", handler);
-}
-export function clearMoviesDisplay() {
-  const children = parent.querySelectorAll(".movies-item");
-  for (const cl of children) {
-    cl.remove();
-  }
 }
 export function hidingPagesbtn() {
   heading.innerHTML = "";

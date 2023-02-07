@@ -12,24 +12,27 @@ export async function getLatestMoviesList(str) {
   //     resolve("t");
   //   }, 5000);
   // });
-
   const request = await fetch(
     "https://imdb-api.com/en/API/InTheaters/k_8mt90ri5"
   );
   const response = await request.json();
   state.newMovies = response.items;
-  console.log(state.newMovies[0]);
 }
 export async function getSearchMoviesList(searchQuery) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("t");
-    }, 5000);
-  });
-  // const request = await fetch(
-  //   `https://imdb-api.com/en/API/SearchMovie/k_8mt90ri5/${searchQuery}`
-  // );
-  // const response = await request.json();
-  // state.searchMovies = response.results;
-  // console.log(state.searchMovies[0]);
+  // return new Promise((resolve, reject) => {
+  //   setTimeout(() => {
+  //     resolve("t");
+  //   }, 5000);
+  // });
+  const request = await fetch(
+    `https://imdb-api.com/en/API/SearchMovie/k_8mt90ri5/${searchQuery}`
+  );
+  const response = await request.json();
+  state.searchMovies = response.results;
+}
+export async function getMovieImage(url) {
+  const request = await fetch(
+    `https://imdb-api.com/API/ResizeImage?apiKey=k_8mt90ri5&size=3158x5000&url=${url[0]}`
+  );
+  url[1] = request.url;
 }

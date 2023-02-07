@@ -1,10 +1,13 @@
 .full-movie-content {
-  @include display-flex(center, normal);
+  @include display-flex(flex-start, normal);
+  gap: 2.4rem;
   position: relative;
   img {
     border-radius: 20px;
-    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    margin: 1.6rem;
     width: 36%;
+    height: 64rem;
   }
   .full-content-des {
     .book-btn {
@@ -34,7 +37,5 @@
         font-size: 2.4rem;
       }
     }
-  }
-  .close-movie-btn {
   }
 }
