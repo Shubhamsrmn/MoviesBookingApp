@@ -44,7 +44,7 @@
       </nav>
     </header>
     <main>
-      <section class="">
+      <section class="start-main-content">
         <div class="loader-container"><span class="loader"></span></div>
         <div class="grid-container">
           <span class="heading-container">
@@ -60,6 +60,7 @@
           </button>
         </div>
       </section>
+      <!-- Above the entry section  ------------------------------------------------>
       <section class="full-movie-content-section">
         <div class="full-movie-content">
           <button class="btn close-movie-btn display-hidden">
@@ -88,19 +89,15 @@
           </div>
           <span><button class="close-movie-btn close-mov-type">x</button></span>
         </div>
+      </section>
+      <section>
         <div class="booking-main-container display-hidden">
           <button class="btn theater-close-btn">
             <i class="ri-close-line"></i>
           </button>
           <div class="booking-main-header">
-            <div class="booking-main-title">
-              Avatar : The Way of Water 2022 (3D) - Hindi
-            </div>
-            <div class="booking-main-genres">
-              <!-- <span>ACTION</span>
-              <span>ADVENTURE</span>
-              <span>SCI-FI</span> -->
-            </div>
+            <div class="booking-main-title"></div>
+            <div class="booking-main-genres"></div>
           </div>
           <div class="booking-main-filters">
             <div class="booking-main-date-panel">
@@ -125,7 +122,9 @@
             <div class="filter-price filter">
               <label for="pricerange">Price-Range :</label>
               <select name="pricerange" id="pricerange">
-                <option value="000-300">select price</option>
+                <option value="000-300" selected="selected">
+                  select price
+                </option>
                 <option value="100-200">Rs 100-200</option>
                 <option value="150-250">Rs 150-250</option>
                 <option value="200-300">Rs 200-300</option>

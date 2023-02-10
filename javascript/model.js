@@ -52,8 +52,8 @@ export async function getSearchMoviesList(searchQuery) {
   state.searchMovies = response.results;
 }
 export async function getMovieImage(url) {
-  const request = await fetch(
-    `https://imdb-api.com/API/ResizeImage?apiKey=k_8mt90ri5&size=400x650&url=${url[0]}`
-  );
-  url[1] = request.url;
+  // const request = await fetch(
+  //   `https://imdb-api.com/API/ResizeImage?apiKey=k_8mt90ri5&size=400x650&url=${url[0]}`
+  // );
+  // url[1] = request.url;
 }
