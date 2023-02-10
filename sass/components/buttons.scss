@@ -43,3 +43,32 @@
   text-align: center;
   @include wid-hie-fsz(4rem, 4rem, 3.2rem);
 }
+.mov-type-btn {
+  @include wid-hie-fsz(4.4rem, 3.2rem, 2rem);
+  background: rgb(249, 249, 249);
+  cursor: pointer;
+  border: 1px solid black;
+  margin: 0 1rem;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.close-mov-type {
+  color: $color-secondary;
+  background: white;
+  cursor: pointer;
+  border: none;
+}
+.toggle-btn {
+  background: white;
+  border: none;
+}
+.theater-close-btn {
+  position: absolute;
+  top: 2%;
+  left: 100%;
+  transform: translate(-100%, 0);
+  color: white;
+  text-align: center;
+  @include wid-hie-fsz(4rem, 4rem, 3.2rem);
+}

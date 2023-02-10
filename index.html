@@ -44,7 +44,7 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="">
         <div class="loader-container"><span class="loader"></span></div>
         <div class="grid-container">
           <span class="heading-container">
@@ -60,11 +60,78 @@
           </button>
         </div>
       </section>
-      <section>
+      <section class="full-movie-content-section">
         <div class="full-movie-content">
           <button class="btn close-movie-btn display-hidden">
             <i class="ri-close-line"></i>
           </button>
+        </div>
+        <div class="full-movie-details"></div>
+      </section>
+      <section class="">
+        <div class="book-pop-up display-hidden">
+          <div class="popup-title"></div>
+          <div class="select-lang">Select language and format</div>
+          <div>
+            <div class="lang">ENGLISH</div>
+            <div>
+              <button class="mov-type-btn">3D</button>
+              <button class="mov-type-btn">4DX</button>
+            </div>
+          </div>
+          <div>
+            <div class="lang">HINDI</div>
+            <div>
+              <button class="mov-type-btn">2D</button>
+              <button class="mov-type-btn">3D</button>
+            </div>
+          </div>
+          <span><button class="close-movie-btn close-mov-type">x</button></span>
+        </div>
+        <div class="booking-main-container display-hidden">
+          <button class="btn theater-close-btn">
+            <i class="ri-close-line"></i>
+          </button>
+          <div class="booking-main-header">
+            <div class="booking-main-title">
+              Avatar : The Way of Water 2022 (3D) - Hindi
+            </div>
+            <div class="booking-main-genres">
+              <!-- <span>ACTION</span>
+              <span>ADVENTURE</span>
+              <span>SCI-FI</span> -->
+            </div>
+          </div>
+          <div class="booking-main-filters">
+            <div class="booking-main-date-panel">
+              <button class="toggle-btn toggle-left">
+                <i class="ri-arrow-left-s-fill"></i>
+              </button>
+              <span class="date-panel-container"> </span>
+              <button class="toggle-btn toggle-right">
+                <i class="ri-arrow-right-s-fill"></i>
+              </button>
+            </div>
+            <div class="filter-timing filter">
+              <label for="movietime">Movie-timing :</label>
+              <select name="movietime" id="movietime">
+                <option value="0-24">select time</option>
+                <option value="9-12">morning(9am to 12pm)</option>
+                <option value="13-16">afternoon(1pm to 4pm)</option>
+                <option value="18-21">night(6pm to 9pm)</option>
+                <option value="21-24">latenight(9pm to 11:50pm)</option>
+              </select>
+            </div>
+            <div class="filter-price filter">
+              <label for="pricerange">Price-Range :</label>
+              <select name="pricerange" id="pricerange">
+                <option value="000-300">select price</option>
+                <option value="100-200">Rs 100-200</option>
+                <option value="150-250">Rs 150-250</option>
+                <option value="200-300">Rs 200-300</option>
+              </select>
+            </div>
+          </div>
         </div>
       </section>
     </main>
