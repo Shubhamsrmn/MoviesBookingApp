@@ -17,7 +17,7 @@
       <nav>
         <div class="subcontainer1">
           <i class="ri-movie-2-line"></i>
-          <span>Movies Booking App</span>
+          <span class="logo-title">Movies Booking App</span>
         </div>
         <div class="subcontainer2">
           <label for="search"></label>
@@ -29,17 +29,9 @@
           <button class="btn search-btn">Search</button>
         </div>
         <div class="subcontainer3">
-          <div>
-            <button class="btn btn-with-icon">
-              <span>Location</span>
-              <span><i class="ri-arrow-drop-down-line"></i></span>
-            </button>
-          </div>
-          <div>
-            <button class="btn btn-with-icon">
-              <span>Sign In</span>
-            </button>
-          </div>
+          <button id="homebtn" class="btn btn-menu">
+            <span>Home</span>
+          </button>
         </div>
       </nav>
     </header>
@@ -59,8 +51,24 @@
             Next Movies
           </button>
         </div>
+        <div class="search-pop-up display-hidden">
+          <div class="search-pop-up-container">
+            <span class="search-item-title"></span>
+            <p class="search-item-plot"></p>
+            <p>
+              it has been released from a while. you can watch this movie on
+              netflix /amazon prime. Click On Latest button to get latest
+              Movies.
+            </p>
+            <div>
+              <button class="btn search-popup-close">
+                <i class="ri-close-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
-      <!-- Above the entry section  ------------------------------------------------>
+      <!-- Above the entry section  ---------------------------------------------------->
       <section class="full-movie-content-section">
         <div class="full-movie-content">
           <button class="btn close-movie-btn display-hidden">
@@ -69,6 +77,7 @@
         </div>
         <div class="full-movie-details"></div>
       </section>
+      <!--  full movie content section -------------------------------------------------->
       <section class="">
         <div class="book-pop-up display-hidden">
           <div class="popup-title"></div>
@@ -91,6 +100,7 @@
         </div>
       </section>
       <section>
+        <!-- full theater movie section ----------------------------------------------->
         <div class="booking-main-container display-hidden">
           <button class="btn theater-close-btn">
             <i class="ri-close-line"></i>

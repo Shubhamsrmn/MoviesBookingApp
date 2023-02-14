@@ -1,0 +1,33 @@
+@media (min-width: 75em) and (max-width: 112.5em) {
+  html {
+    font-size: 62.5%;
+  }
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 56.25em) and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+@media (min-width: 37.5em) and (max-width: 56.25em) {
+  html {
+    font-size: 37%;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 240px);
+  }
+}
+
+@media (min-width: 1em) and (max-width: 37.5em) {
+  html {
+    font-size: 25%;
+  }
+  .grid-container {
+    grid-template-columns: repeat(1, 220px);
+  }
+}

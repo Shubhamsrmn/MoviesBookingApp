@@ -1,5 +1,5 @@
 .book-pop-up {
-  @include wid-hie-fsz(50vw, 56vh, 2.4rem);
+  @include wid-hie-fsz(fit-content, fit-content, 2.4rem);
   position: fixed;
   left: 50%;
   top: 50%;

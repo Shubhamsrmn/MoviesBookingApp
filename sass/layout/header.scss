@@ -1,18 +1,23 @@
 header {
-  background-color: $color-primary;
-  @include wid-hie-fsz(100%, 12vh, 3.2rem);
+  font-size: 3.2rem;
 }
 nav {
+  @include wid-hie-fsz(100%, fit-content, inherit);
+  background-color: $color-primary;
   padding: 1rem 2rem;
   @include display-flex(space-between, center);
   .subcontainer1 {
-    @include display-flex(normal, normal);
+    @include display-flex(center, flex-start);
+    .logo-title {
+      text-align: center;
+    }
   }
   .subcontainer2 {
-    @include display-flex(normal, center);
+    position: relative;
+    @include display-flex(center, center);
   }
   .subcontainer3 {
-    @include display-flex(normal, normal);
+    @include display-flex(center, center);
     gap: 1rem;
   }
 }

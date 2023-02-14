@@ -1,7 +1,12 @@
+.start-main-content {
+  position: relative;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   font-size: 2.4rem;
+  justify-content: center;
+  align-content: center;
   text-align: center;
   font-weight: normal;
   margin: 1rem;
@@ -41,4 +46,19 @@
 .btn-container {
   @include display-flex(space-around, normal);
   margin-bottom: 2.4rem;
+}
+.search-pop-up {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.search-pop-up-container {
+  width: max-content;
+  height: fit-content;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: white;
 }

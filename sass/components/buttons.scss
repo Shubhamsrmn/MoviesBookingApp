@@ -14,16 +14,18 @@
   @include wid-hie-fsz(14rem, 5rem, 2.4rem);
 }
 .search-btn {
-  @include wid-hie-fsz(10rem, 5rem, 2rem);
+  @include wid-hie-fsz(max-content, 5rem, 2rem);
   border-radius: 24px;
+  padding: 1rem;
   position: absolute;
-  right: 28%;
+  right: 0%;
 }
 .btn-with-icon {
   @include display-flex(center, center);
 }
 #search {
-  @include wid-hie-fsz(48rem, 5rem, 2.4rem);
+  @include wid-hie-fsz(48rem, 5rem, 2rem);
+  flex-grow: 1;
   padding: 1.6rem;
   border: none;
   border-radius: 24px;
@@ -71,4 +73,18 @@
   color: white;
   text-align: center;
   @include wid-hie-fsz(4rem, 4rem, 3.2rem);
+}
+.search-popup-close {
+  width: min-content;
+  height: min-content;
+  position: absolute;
+  padding: 0.4rem;
+  top: 0%;
+  left: 100%;
+  transform: translate(-100%, -0%);
+}
+.btn-menu {
+  @include display-flex(center, center);
+  padding: 1.6rem;
+  width: max-content;
 }
