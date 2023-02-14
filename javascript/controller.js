@@ -49,7 +49,7 @@ let Id;
   view.addEventHandlerMovieItem(async function handler() {
     const id = location.hash.slice(1);
     history.back();
-    history.replaceState(null, "", "http://127.0.0.1:5500");
+  history.replaceState(null, "", location.href.slice(0, -2));
     if (isSearchActive && model.state.searchMovies[id] !== undefined) {
       view.showSearchPopup(
         model.state.searchMovies[id].title,
